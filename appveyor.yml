@@ -26,7 +26,6 @@ deploy:
   debug: true
 #  active_mode: true
 
-deploy:
 - provider: FTP
   host: waws-prod-bay-003.ftp.azurewebsites.windows.net
   protocol: ftp
