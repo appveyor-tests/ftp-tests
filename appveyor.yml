@@ -18,4 +18,4 @@ deploy:
   artifact: deploy-1, deploy-2
   beta: true
   debug: true
-  active_mode: true
+#  active_mode: true
