@@ -10,6 +10,8 @@ test_script:
 artifacts:
 - path: files/placeholder.txt
   name: deploy-3
+- path: test-app.zip
+  name: app-1
 
 deploy:
 - provider: FTP
@@ -23,3 +25,15 @@ deploy:
   beta: true
   debug: true
 #  active_mode: true
+
+deploy:
+- provider: FTP
+  host: waws-prod-bay-003.ftp.azurewebsites.windows.net
+  protocol: ftp
+  username: ftp-test\$ftp-test
+  password:
+    secure: iKh/+NuhBrWhfaUrjI9XDb2Q1lshMta3r3pQqBJyg/xt1dvG3FobrHD0FInLfxOmrrIu6T0L0tKI9RxhqHxzyg==
+  folder: site/wwwroot/downloads/appveyor-test-app/$(appveyor_major_version)
+  application: app-1
+  beta: true
+  debug: true
