@@ -32,7 +32,7 @@ deploy:
   username: ftp-test\$ftp-test
   password:
     secure: iKh/+NuhBrWhfaUrjI9XDb2Q1lshMta3r3pQqBJyg/xt1dvG3FobrHD0FInLfxOmrrIu6T0L0tKI9RxhqHxzyg==
-  folder: site/wwwroot/downloads/appveyor-test-app/$(appveyor_major_version)
+  folder: site/wwwroot/downloads/appveyor-test-app/$(APPVEYOR_BUILD_VERSION)
   application: app-1
   beta: true
   debug: true
