@@ -17,3 +17,4 @@ deploy:
   folder: site/wwwroot/downloads/appveyor-test/$(appveyor_major_version)/linux
   artifact: deploy-1, deploy-2
   beta: true
+  debug: true
