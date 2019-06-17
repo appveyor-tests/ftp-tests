@@ -20,7 +20,7 @@ deploy:
   username: ftp-test\$ftp-test
   password:
     secure: iKh/+NuhBrWhfaUrjI9XDb2Q1lshMta3r3pQqBJyg/xt1dvG3FobrHD0FInLfxOmrrIu6T0L0tKI9RxhqHxzyg==
-  folder: site/wwwroot/downloads/appveyor-test/$(appveyor_major_version)/linux
+  folder: site/wwwroot/downloads/appveyor-test/$(APPVEYOR_BUILD_VERSION)/linux
   artifact: deploy-1, deploy-2, deploy-3
   beta: true
   debug: true
