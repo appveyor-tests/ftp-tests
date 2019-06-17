@@ -1,0 +1,19 @@
+environment:
+  appveyor_major_version: 1.0
+
+build: off
+
+test_script:
+- appveyor PushArtifact FileZillaClient.exe -DeploymentName deploy-1
+- appveyor PushArtifact files/node-v10.16.0-win-x64.7z -DeploymentName deploy-2
+
+deploy:
+- provider: FTP
+  host: waws-prod-bay-003.ftp.azurewebsites.windows.net
+  protocol: ftp
+  username: ftp-test\$ftp-test
+  password:
+    secure: bKILhIyvvgz8HagjY2e7+MEu2NSdM3JWyOR98mFH+VB2N3fPevg2o+qWiYmtJc1Ik6ohyzgT5YUE+ImLFv1uIw==
+  folder: site/wwwroot/downloads/appveyor-test/$(appveyor_major_version)/linux
+  artifact: deploy-1, deploy-2
+  beta: true
