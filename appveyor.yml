@@ -19,7 +19,7 @@ deploy:
   protocol: ftp
   username: ftp-test\$ftp-test
   password:
-    secure: iKh/+NuhBrWhfaUrjI9XDb2Q1lshMta3r3pQqBJyg/xt1dvG3FobrHD0FInLfxOmrrIu6T0L0tKI9RxhqHxzyg==
+    secure: vxjD/OdEOfhgSaOsCoBbOvf8XXlqpjysR6g/uCXobC1e5F1lMl9DxiqRQRd8MoQBM6tcrTdN+gA1Z5DDWEG9jw==
   folder: site/wwwroot/downloads/appveyor-test/$(APPVEYOR_BUILD_VERSION)/linux
   artifact: deploy-1, deploy-2, deploy-3
   beta: true
@@ -31,7 +31,7 @@ deploy:
   protocol: ftp
   username: ftp-test\$ftp-test
   password:
-    secure: iKh/+NuhBrWhfaUrjI9XDb2Q1lshMta3r3pQqBJyg/xt1dvG3FobrHD0FInLfxOmrrIu6T0L0tKI9RxhqHxzyg==
+    secure: vxjD/OdEOfhgSaOsCoBbOvf8XXlqpjysR6g/uCXobC1e5F1lMl9DxiqRQRd8MoQBM6tcrTdN+gA1Z5DDWEG9jw==
   folder: site/wwwroot/downloads/appveyor-test-app/$(APPVEYOR_BUILD_VERSION)
   application: app-1
   beta: true
